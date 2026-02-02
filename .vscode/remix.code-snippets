@@ -1,0 +1,107 @@
+{
+  "loader": {
+    "prefix": "/loader",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import { type LoaderFunctionArgs } from \"@remix-run/node\"",
+      "",
+      "export async function loader({ request }: LoaderFunctionArgs) {",
+      "  return {}",
+      "}",
+    ],
+  },
+  "clientLoader": {
+    "prefix": "/clientLoader",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import { type ClientLoaderFunctionArgs } from \"@remix-run/react\"",
+      "",
+      "export async function clientLoader({ request, serverLoader }: ClientLoaderFunctionArgs) {",
+      "  // Make sure to return the proper data that are needed in the client",
+      "  const data = await serverLoader()",
+      "  return data",
+      "}",
+    ],
+  },
+  "action": {
+    "prefix": "/action",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import { type ActionFunctionArgs } from \"@remix-run/node\"",
+      "",
+      "export async function action({ request }: ActionFunctionArgs) {",
+      "  return {}",
+      "}",
+    ],
+  },
+  "clientAction": {
+    "prefix": "/clientAction",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import { type ClientActionFunctionArgs } from \"@remix-run/react\"",
+      "",
+      "export async function clientAction({ request, serverAction }: ClientActionFunctionArgs) {",
+      "  // Make sure to return the proper data that are needed in the client",
+      "  const data = await serverAction()",
+      "  return data",
+      "}",
+    ],
+  },
+  "default": {
+    "prefix": "/default",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "export default function ${TM_FILENAME_BASE/[^a-zA-Z0-9]*([a-zA-Z0-9])([a-zA-Z0-9]*)/${1:/capitalize}${2}/g}() {",
+      " return (",
+      "  <div>",
+      "    <h1>Unknown Route</h1>",
+      "  </div>",
+      " )",
+      "}",
+    ],
+  },
+  "headers": {
+    "prefix": "/headers",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import { pipeHeaders } from '~/lib/headers.server';",
+      "",
+      "export const headers: HeadersFunction = pipeHeaders;",
+    ],
+  },
+  "links": {
+    "prefix": "/links",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import type { LinksFunction } from '@remix-run/node'",
+      "",
+      "export const links: LinksFunction = () => {",
+      "  return []",
+      "}",
+    ],
+  },
+  "meta": {
+    "prefix": "/meta",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import type { MetaFunction } from '@remix-run/node'",
+      "",
+      "export const meta: MetaFunction<typeof loader> = ({ data }) => [{",
+      "  title: 'Title',",
+      "}]",
+    ],
+  },
+  "shouldRevalidate": {
+    "prefix": "/shouldRevalidate",
+    "scope": "typescriptreact,javascriptreact,typescript,javascript",
+    "body": [
+      "import type { ShouldRevalidateFunction } from '@remix-run/react'",
+      "",
+      "export const shouldRevalidate: ShouldRevalidateFunction = ({",
+      "  defaultShouldRevalidate",
+      "}) => {",
+      "  return defaultShouldRevalidate",
+      "}",
+    ],
+  },
+}
