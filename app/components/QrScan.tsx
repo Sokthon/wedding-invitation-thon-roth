@@ -1,4 +1,4 @@
-import qr from "@/public/aba-merchant.jpg";
+import qr from "@/public/aba-merchant-2.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { moul } from "../fonts";
