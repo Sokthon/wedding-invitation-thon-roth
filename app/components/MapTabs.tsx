@@ -11,7 +11,7 @@ const MapTabs: React.FC = () => {
       <div className="tabs flex justify-center mb-5">
         <WeddingCountdown />
       </div>
-      <div className="tab-content flex flex-col md:flex-row justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="map-container w-100 h-100 ">
           <Link
             className="block pb-3 font-bold"
@@ -22,7 +22,7 @@ const MapTabs: React.FC = () => {
           </Link>
           <GoogleMapComponent />
         </div>
-        <div className="image-container flex justify-center items-center ml-0 mt-5 md:mt-0 md:ml-5  w-100 h-100">
+        <div className="image-container flex justify-center items-center ml-0 mt-5 md:mt-0 md:ml-5">
           <Image
             src="/limlong-kpc.jpg"
             alt="lim long garage station"

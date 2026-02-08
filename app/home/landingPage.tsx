@@ -97,20 +97,20 @@ const LandingPage = () => {
               className="h-auto object-contain mb-3.5"
             />
             <p className="text-lg " style={moul.style}>
-              សូមអញ្ជើញចូលរួមពិធីមង្គលការរបស់យើង
+              សូមគោរពអញ្ជើញ
             </p>
             <div className="text-content flex flex-col gap-6 max-w-3xl">
-              <div className="flex gap-6 justify-between md:gap-10 w-full">
+              <div className="flex justify-between md:gap-10 w-full">
                 <h2
                   style={khmer.style}
-                  className="  min-[425px]:text-base text-lg md:text-2xl leading-relaxed md:leading-12.5 text-left"
+                  className="  [@media(max-width:475px)]:text-sm text-lg md:text-2xl leading-relaxed md:leading-12.5 text-left"
                 >
                   លោក <b className="ml-6 md:ml-7.5">ឆែ ប៊ុនថង</b> <br />
                   លោកស្រី <b>ហ៊ុយ ឃីម </b> <br />
                 </h2>
                 <h2
                   style={khmer.style}
-                  className="  min-[425px]:text-base text-lg md:text-2xl leading-relaxed md:leading-12.5 text-left"
+                  className=" [@media(max-width:475px)]:text-sm text-lg md:text-2xl leading-relaxed md:leading-12.5 text-left"
                 >
                   លោក <b className="ml-6 md:ml-7.5">នួន ណេង</b> <br />
                   លោកស្រី <b>ប៉ាល់ តេងឡាយ </b> <br />
@@ -118,27 +118,29 @@ const LandingPage = () => {
               </div>
               <p
                 style={khmer.style}
-                className="text-base md:text-lg leading-8 max-w-prose text-center"
+                className="[@media(max-width:475px)]:text-sm  text-base md:text-lg leading-5 max-w-prose text-center"
               >
-                មានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម អ្នកឧកញ៉ា ឧកញ៉ា លោកជំទាវ លោក
-                លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស
+                មានកិត្តិយសសូមគោរពអញ្ជើញឯកឧត្តមអ្នកឧកញ៉ាឧកញ៉ាលោកជំទាវលោក
+                លោកស្រីអ្នកនាងកញ្ញាអញ្ជើញចូលរួមជាអធិបតីនិងជាភ្ញៀវកិត្តិយស
                 ដើម្បីប្រសិទ្ធពរជ័យសិរីសួស្តីជ័យមង្គលដល់គូស្វាមីភរិយាថ្មី
-                ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ ។
+                ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍កូនប្រុស-កូនស្រីរបស់យើងខ្ញុំ។
               </p>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 my-10">
+              <div className="relative flex  items-center sm:justify-center sm:gap-20 justify-between gap-6  my-10">
                 <p
                   style={khmer.style}
-                  className="text-base md:text-xl text-center"
+                  className="text-lg md:text-xl text-center"
                 >
                   កូនប្រុសនាម
                   <br />
                   <br />
                   <b>ផន សុខធន</b>
                 </p>
-                <Image src={withKhmer} width={80} height={80} alt="with" />
+                <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <Image src={withKhmer} width={80} height={80} alt="with" />
+                </span>
                 <p
                   style={khmer.style}
-                  className="text-base md:text-xl text-center"
+                  className="text-lg md:text-xl text-center"
                 >
                   កូនស្រីនាម
                   <br />
@@ -146,13 +148,16 @@ const LandingPage = () => {
                   <b>ណេង ឆៃរ័ត្ន</b>
                 </p>
               </div>
-              <p style={moul.style} className="text-lg">
+              <p
+                style={moul.style}
+                className="text-lg [@media(max-width:475px)]:text-[16px] "
+              >
                 <span className="block mb-2">ដែលនឹងប្រព្រឹត្តទៅនៅ</span>
                 <span className="block mb-2">
-                  ថ្ងៃអាទិត្យទី០១ខែមីនាឆ្នាំ២០២៦
+                  ថ្ងៃអាទិត្យទី០១ ខែមីនា ឆ្នាំ២០២៦
                 </span>
                 <span className="block mb-2">
-                  ស្ថិតនៅភូមិព្រៃខ្មែរឃុំរលាប្អៀស្រុករលាប្អៀរខេត្តកំពង់ឆ្នាំង
+                  ស្ថិតនៅភូមិព្រៃខ្មែរ ឃុំរលាប្អៀ ស្រុករលាប្អៀរ ខេត្តកំពង់ឆ្នាំង
                 </span>
               </p>
             </div>
@@ -161,7 +166,7 @@ const LandingPage = () => {
       </section>
       <section
         id="location"
-        className="flex-col justify-center items-center flex md:pb-19 px-5"
+        className="flex-col justify-center items-center flex md:pb-19 px-5 overflow-hidden"
       >
         <div className="container-wide w-full max-w-300 flex-col items-center flex">
           <div className="guest-form-content w-full text-center flex-col items-center flex relative md:mb-10">
@@ -172,18 +177,14 @@ const LandingPage = () => {
               className="h-auto object-contain mb-3.5"
             />
             <br></br>
-            <p>
-              Save the date <span>❤️</span> : ថ្ងៃអាទិត្យ ទី១ ខែមីនា ឆ្នាំ២០២៦
-            </p>
-            <br></br>
             <h2>
-              ជ្រើសរើសទីកន្លែងដ៏ល្អឥតខ្ចោះ ដែលបង្ហាញពីស្នេហារបស់អ្នកទាំងពីរ។
+              ជ្រើសរើសទីកន្លែងដ៏ល្អឥតខ្ចោះដែលបង្ហាញពីស្នេហារបស់អ្នកទាំងពីរ។
             </h2>
             <MapTabs />
           </div>
         </div>
       </section>
-      <section id="agenda" className="container-full section-styles">
+      <section id="agenda" className="container-full section-styles px-5">
         <div className="content-section flex flex-col items-center justify-start gap-8">
           <div className="title-section container ">
             <div className="container-wide w-full max-w-300 flex flex-col items-center">

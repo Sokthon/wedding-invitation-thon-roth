@@ -12,7 +12,7 @@ export default function QrScan() {
       >
         ចំណងដៃ
       </h2>
-      <div className="bg-white rounded-2xl shadow-xl p-6  w-96 text-center">
+      <div className="bg-white rounded-2xl shadow-xl p-6  max-w-96 text-center">
         <div className="bg-gray-50 rounded-xl p-4 mb-4 flex justify-center items-center">
           <Image
             src={qr}

@@ -28,7 +28,7 @@ export default function WeddingInvite() {
       <div className="w-full max-w-md text-center space-y-6">
         <div className="text-4xl text-[#C9A24D]">❀</div>
 
-        <h1 className={`text-3xl text-[#5A4638] ${moul.className}`}>
+        <h1 className={`text-3xl text-[#5A4638] ${moul.className} leading-12`}>
           សិរីមង្គលអាពាហ៍ពិពាហ៍
         </h1>
 
