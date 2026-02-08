@@ -65,7 +65,7 @@ const LandingPage = () => {
               <div className="hero-gallery-item w-full overflow-hidden relative z-10">
                 <Image
                   priority
-                  className=" w-full object-cover h-[55vw] md:h-80vh rounded-2xl md:rounded-none shadow-[0_20px_50px_rgba(0,0,0,0.18)] md:shadow-none"
+                  className=" w-full object-cover h-[55vw] md:h-80vh rounded-2xl md:rounded-none shadow-[0_20px_50px_rgba(0,0,0,0.18)] md:shadow-none`"
                   src={img10}
                   alt="Hero Center"
                 />
@@ -109,14 +109,14 @@ const LandingPage = () => {
                   style={khmer.style}
                   className="  [@media(max-width:475px)]:text-sm text-lg md:text-2xl leading-relaxed md:leading-12.5 text-left"
                 >
-                  លោក <b className="ml-6 md:ml-7.5">ឆែ ប៊ុនថង</b> <br />
+                  លោក <b className="ml-4.5 md:ml-7.5">ឆែ ប៊ុនថង</b> <br />
                   លោកស្រី <b>ហ៊ុយ ឃីម </b> <br />
                 </h2>
                 <h2
                   style={khmer.style}
                   className=" [@media(max-width:475px)]:text-sm text-lg md:text-2xl leading-relaxed md:leading-12.5 text-left"
                 >
-                  លោក <b className="ml-6 md:ml-7.5">នួន ណេង</b> <br />
+                  លោក <b className="ml-4.5 md:ml-7.5">នួន ណេង</b> <br />
                   លោកស្រី <b>ប៉ាល់ តេងឡាយ </b> <br />
                 </h2>
               </div>
