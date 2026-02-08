@@ -14,12 +14,12 @@ const schedules: ScheduleSection[] = [
     items: [
       { time: "ម៉ោង ០២:០០ រសៀល", description: "ពិធីសែនក្រុងពាលី" },
       { time: "ម៉ោង ០៣:០០ រសៀល", description: "ពិធីសូត្រមន្តចំរើនព្រះបរិត្ត" },
-      { time: "ម៉ោង ០៨:០០ រសៀល", description: "ពិធីជាវខាន់ស្លា" },
+      { time: "ម៉ោង ០៤:០០ រសៀល", description: "ពិធីជាវខាន់ស្លា" },
       { time: "ម៉ោង ០៥:០០ ល្ងាច", description: "អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារ" },
     ],
   },
   {
-    title: "កម្មវិធីថ្ងៃទី២ ថ្ងៃអាទិត្យ ទី០១ ខែកុម្ភៈ ឆ្នាំ២០២៦",
+    title: "កម្មវិធីថ្ងៃទី២ ថ្ងៃអាទិត្យ ទី០១ ខែមីនា ឆ្នាំ២០២៦",
     items: [
       {
         time: "ម៉ោង ០៦:៣០ ព្រឹក",
@@ -30,7 +30,6 @@ const schedules: ScheduleSection[] = [
         time: "ម៉ោង ០៧:៣០ ព្រឹក",
         description: ["ពិធីចៅមហានិយាយជើងការ", "រាប់ផ្លែឈើ"],
       },
-      { time: "ម៉ោង ០៨:៣០ ព្រឹក", description: "ពិធីបំពាក់ចិញ្ចៀន" },
       { time: "ម៉ោង ០៩:១៥ ព្រឹក", description: "ពិធីកាត់សក់បង្កក់សិរី" },
       {
         time: "ម៉ោង ១១:០០ ថ្ងៃត្រង់",
@@ -41,7 +40,7 @@ const schedules: ScheduleSection[] = [
         description: "អញ្ជើញភ្ញៀវពិសាអាហារថ្ងៃត្រង់",
       },
       {
-        time: "ម៉ោង ០៨:០០ រសៀល",
+        time: "ម៉ោង ០៤:០០ រសៀល",
         description: "ទទួលភ្ញៀវកិត្តិយសពិសា ភោជនាហារ",
       },
     ],
@@ -56,10 +55,7 @@ export default function ScheduleTimeline() {
           <h2 className="mb-6 md:mb-8 text-lg md:text-xl font-semibold text-gray-900">
             {section.title}
           </h2>
-
-          {/* Timeline wrapper */}
-          <div className="relative pl-6 md:pl-0">
-            {/* Vertical line */}
+          <div className="relative pl-6 md:pl-0 md:last:pl-0">
             <div
               className="
                 absolute
@@ -82,7 +78,6 @@ export default function ScheduleTimeline() {
                     gap-2 md:gap-8
                   "
                 >
-                  {/* Time */}
                   <div
                     className="
                       text-sm md:text-base
@@ -93,10 +88,7 @@ export default function ScheduleTimeline() {
                   >
                     {item.time}
                   </div>
-
-                  {/* Content */}
                   <div className="relative pl-6 md:pl-0">
-                    {/* Dot */}
                     <span
                       className="
                         absolute
@@ -111,8 +103,6 @@ export default function ScheduleTimeline() {
                         group-hover:scale-110
                       "
                     />
-
-                    {/* Description */}
                     <div className="text-gray-900 text-sm md:text-base">
                       {Array.isArray(item.description) ? (
                         <div className="space-y-1">

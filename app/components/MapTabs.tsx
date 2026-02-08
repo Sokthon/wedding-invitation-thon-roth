@@ -3,21 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import GoogleMapComponent from "./GoogleMap";
+import WeddingCountdown from "./WeddingCountdown";
 
 const MapTabs: React.FC = () => {
   return (
     <div className="tabs-container w-full text-center my-5">
-      <div className="tabs flex justify-center mb-5"></div>
+      <div className="tabs flex justify-center mb-5">
+        <WeddingCountdown />
+      </div>
       <div className="tab-content flex flex-col md:flex-row justify-center items-center">
         <div className="map-container w-100 h-100 ">
           <Link
-            className="block pb-3"
+            className="block pb-3 font-bold"
             target="_blank"
             href={"https://maps.app.goo.gl/H5zuZK6JcfFDwcjy6"}
           >
             ចុចទីនេះសំរាប់ទីតាំង
           </Link>
-
           <GoogleMapComponent />
         </div>
         <div className="image-container flex justify-center items-center ml-0 mt-5 md:mt-0 md:ml-5  w-100 h-100">

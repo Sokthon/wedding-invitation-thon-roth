@@ -13,17 +13,17 @@ const Navbar = () => {
     setIsOpen(false);
   };
   const menuItems = [
-    { label: "ទំព័រដើម", href: "/", bold: true },
+    { label: "ទំព័រដើម", href: "/home", bold: true },
     { label: "ពាក្យស្វាគមន៍", href: "#greeting" },
     { label: "ទីតាំង", href: "#location" },
     { label: "កម្មវិធីសិរីមង្គលអាពាហ៍ពិពាហ៍", href: "#agenda" },
   ];
 
   return (
-    <nav className="flex-no-wrap fixed top-0 z-50 flex w-full items-center  bg-[#FBFBFB] py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start lg:py-4 justify-evenly">
+    <nav className="scroll-smooth flex-no-wrap fixed top-0 z-50 flex w-full items-center  bg-[#FFF8ED] py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start lg:py-4 justify-evenly">
       <div className="md:container-full container flex flex-wrap items-center justify-between w-full">
         <Link
-          href="/"
+          href="/home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
