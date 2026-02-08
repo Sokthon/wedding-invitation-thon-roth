@@ -8,7 +8,6 @@ import img5 from "@/public/main-photos/pre-wedding-1.jpg";
 import img9 from "@/public/main-photos/pre-wedding-2.jpg";
 import img10 from "@/public/main-photos/pre-wedding-4.jpg";
 import withKhmer from "@/public/withKhmer-trans.png";
-import CardHero from "../components/CardHero";
 import MapTabs from "../components/MapTabs";
 import QrScan from "../components/QrScan";
 import ScheduleTimeline from "../components/ScheduleTable";
@@ -51,41 +50,46 @@ const LandingPage = () => {
         id="hero"
         className="w-ful flex flex-col justify-center items-center px-5 pb-13.5 sm:pb-14.5 md:pb-16.5 lg:pb-18"
       >
-        <div className="container-wide w-full md:max-w-300 flex-col items-center flex">
+        <div className="container-wide w-full md:max-w-300 flex-col items-center flex mt-17">
           <div className="hero-content w-full text-center flex-col items-center flex relative md:mb-10">
-            <div className="hero-gallery w-full grid grid-cols-3 xl:gap-5 lg:gap-4.5 md:gap-3.5 gap-1">
-              <div className="hero-gallery-item w-full overflow-hidden relative">
+            <div className=" hero-gallery w-full grid grid-cols-[1fr_1.5fr_1fr] gap-2 md:grid-cols-3 md:gap-3.5 lg:gap-4.5 xl:gap-5">
+              <div className="hero-gallery-item w-full overflow-hidden relative md:translate-y-0 translate-y-6">
                 <Image
                   priority
-                  className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-150"
+                  className=" w-full object-cover h-[55vw] md:h-80vh rounded-xl md:rounded-none"
                   src={img9}
                   alt="Hero 1"
                 />
               </div>
-              <div className="hero-gallery-item w-full overflow-hidden relative">
+
+              <div className="hero-gallery-item w-full overflow-hidden relative z-10">
                 <Image
                   priority
-                  className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-150"
-                  src={img5}
-                  alt="Hero 2"
+                  className=" w-full object-cover h-[55vw] md:h-80vh rounded-2xl md:rounded-none shadow-[0_20px_50px_rgba(0,0,0,0.18)] md:shadow-none"
+                  src={img10}
+                  alt="Hero Center"
                 />
               </div>
-              <div className="hero-gallery-item w-full overflow-hidden relative">
+
+              <div className="hero-gallery-item w-full overflow-hidden relative md:translate-y-0 translate-y-6">
                 <Image
                   priority
-                  className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-150"
-                  src={img10}
+                  className="
+      w-full object-cover
+      h-[55vw] md:h-80vh
+      rounded-xl md:rounded-none
+    "
+                  src={img5}
                   alt="Hero 3"
                 />
               </div>
             </div>
-            <CardHero />
           </div>
         </div>
       </section>
       <section
         id="greeting"
-        className="container max-w-300 flex flex-col justify-center items-center py-20 px-5 mx-auto"
+        className="container max-w-300 flex flex-col justify-center items-center py-10 md:py-20 px-5 mx-auto"
       >
         <div className="container-wide w-full flex flex-col items-center">
           <div className="w-full text-center flex flex-col items-center gap-6 relative">
