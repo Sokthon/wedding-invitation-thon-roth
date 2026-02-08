@@ -46,7 +46,7 @@ const LandingPage = () => {
 
   return (
     <div key={pathname} className="animate-fade-in bg-[#FFF8ED]">
-      {/* <audio ref={audioRef} src="/music/wedding-song.mp3" preload="auto" loop /> */}
+      <audio ref={audioRef} src="/music/wedding-song.mp3" preload="auto" loop />
       <section
         id="hero"
         className="w-ful flex flex-col justify-center items-center px-5 pb-13.5 sm:pb-14.5 md:pb-16.5 lg:pb-18"
